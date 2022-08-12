@@ -1,0 +1,26 @@
+# Level 1
+
+### ✏️ 폰켓몬
+중복된 배열 요소 제거
+홍 박사님은 당신에게 자신의 연구실에 있는 총 N 마리의 폰켓몬 중에서 N/2마리를 가져가도 좋다했다.
+다만 중복되는 폰켓몬 종류가 있을경우 한마리만 카운트 된다. 종류에 따라 번호가 매겨져있다.
+
+- 조건
+  - 최대 개수 n/2
+  - 중복된 종류는 한 마리만 가져갈 수 있다.  
+
+- 예시 
+  - input: [3,1,2,3] 
+  - output: 2
+
+> **풀이내용**
+```
+function solution(nums) {
+    let newArr = nums.filter((e,id) => nums.indexOf(e) === id)
+    let result = newArr.length
+    if((nums.length / 2) <  result){
+        result = nums.length / 2;
+    }
+    return result
+}
+```
