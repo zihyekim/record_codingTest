@@ -1,18 +1,29 @@
 일차도전..
 
-```
+# Level 0
+
+### ✏️ OX 퀴즈
+
+주어진 객체배열을 구조분해 할당 수 마지막 수와 앞 선 두수의 합이 맞을 경우  "O"를 반혼 아니면 "x"를 반환해
+정답 배열 객체를 만든다
+
+- 조건
+> **다른 사람 풀이**
+ ```java
+ ```
+ 
+> 실패한 풀이
+```java
 function solution(quiz) {
     var answer = [];    
     
     // let divide = quiz.map()
-    // const split; 
+    
     for(let i = 0 ; i < quiz.length; i++) {
         let str = quiz[i].split("=");
         let [sum,result] = str
         console.log(str)
-        // split = str;
-        return str.map(t => {eval(t.sum) == Number(t.result) ? return "O" : "X"})
-    }
+        
 //         let answer1 = "";
         
 //         if(eval(sum) == Number(result)){
@@ -24,7 +35,10 @@ function solution(quiz) {
 //         }
         
         // answer.push(answer1);
+    }
     
-    return answer = str ;
+    return answer;
 }
+```
+현재 처리해야될 요소만 가지고 비교를해서 []으로 출력됐다.
 ```
