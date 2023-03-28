@@ -39,6 +39,3 @@ function solution(quiz) {
     
     return answer;
 }
-```
-현재 처리해야될 요소만 가지고 비교를해서 []으로 출력됐다.
-```
