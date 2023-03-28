@@ -1,0 +1,30 @@
+일차도전..
+
+```
+function solution(quiz) {
+    var answer = [];    
+    
+    // let divide = quiz.map()
+    // const split; 
+    for(let i = 0 ; i < quiz.length; i++) {
+        let str = quiz[i].split("=");
+        let [sum,result] = str
+        console.log(str)
+        // split = str;
+        return str.map(t => {eval(t.sum) == Number(t.result) ? return "O" : "X"})
+    }
+//         let answer1 = "";
+        
+//         if(eval(sum) == Number(result)){
+//             return answer1 = "O"
+//             // console.log('O')
+//         } else {
+//             return answer1 = "X" 
+//         // console.log('X')
+//         }
+        
+        // answer.push(answer1);
+    
+    return answer = str ;
+}
+```
