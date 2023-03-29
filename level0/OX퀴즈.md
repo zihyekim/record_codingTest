@@ -10,6 +10,14 @@
 - 조건
 > **다른 사람 풀이**
  ```java
+ function solution(quiz) {
+   return quiz.map((t) => {
+        t = t.split("=")
+        const [sum , result] = t
+        
+        return eval(sum) == Number(result) ? "O" : "X"
+    })
+ }
  ```
  
 > 실패한 풀이
@@ -39,3 +47,24 @@ function solution(quiz) {
     
     return answer;
 }
+
+> 재풀이
+``` java
+
+function solution(quiz) {
+    var answer = [];    
+    
+    // let divide = quiz.map()
+    
+    for(let i = 0 ; i < quiz.length; i++) {
+        let [sum, result] = quiz[i].split("=");
+        
+        if(eval(sum)==Number(result)){
+            answer.push("O")
+        }else answer.push("X")
+    }
+    
+    return answer;
+}
+```
+
