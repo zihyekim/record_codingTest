@@ -1,5 +1,3 @@
-일차도전..
-
 # Level 0
 
 ### ✏️ OX 퀴즈
@@ -7,7 +5,6 @@
 주어진 객체배열을 구조분해 할당 수 마지막 수와 앞 선 두수의 합이 맞을 경우  "O"를 반혼 아니면 "x"를 반환해
 정답 배열 객체를 만든다
 
-- 조건
 > **다른 사람 풀이**
  ```java
  function solution(quiz) {
@@ -18,6 +15,7 @@
         return eval(sum) == Number(result) ? "O" : "X"
     })
  }
+ 
  ```
  
 > 실패한 풀이
@@ -47,6 +45,7 @@ function solution(quiz) {
     
     return answer;
 }
+```
 
 > 재풀이
 ``` java
